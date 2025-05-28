@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOART - Фотостудия</title>
+    <style>
+        body {
+            background-color: #d0cef8;
+            color: #333;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #181281;
+            color: white;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none !important;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #908bee;
+        }
+        .art{
+            text-decoration: none;
+            color: white;
+        }
+        .page-header {
+            text-align: center;
+            padding: 60px 20px 0 30px; 
+            background-color: #908bee;
+            color: white;
+            z-index: 200;
+        }
+
+        .form-wrapper {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .login {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .login-header {
+            background: #181281;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .login-container {
+            padding: 20px;
+        }
+
+        .login p {
+            margin: 15px 0;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border 0.3s;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .login input:focus {
+            border-color: #181281;
+            outline: none;
+        }
+
+        .login input[type="submit"] {
+            background-color: #181281;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            border: none;
+        }
+
+        .login input[type="submit"]:hover {
+            background-color: #2820a8;
+        }
+
+        /* Футер */
+        footer {
+            background-color: #181281;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo"><a href="FOTOART.html" class="art" style="color: white;">FotoArt</a></div>
+            <ul class="nav-links">
+                <li><a href="portfolio.html" target="_blank">Портфолио</a></li>
+                <li><a href="price.html">Цены</a></li>
+                <li><a href="register.html">Запись</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Заголовок -->
+    <header class="page-header" id="home">
+        <h1>Профессиональная фотостудия</h1>
+    </header>
+
+    <!-- Форма записи -->
+    <div class="form-wrapper">
+        <div class="login">
+            <h2 class="login-header">Записаться</h2>
+            <form class="login-container">
+                <p><input type="email" placeholder="Почта" required></p>
+                <p><input type="password" placeholder="Пароль" required></p>
+                <p><input type="submit" value="Записаться"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Контакты</h3>
+            <p style="margin: 20px 0;">г. Владивосток, ул. Фотографичная, 15</p>
+            <p>Телефон: +7 (800) 555-35-35</p>
+            <p style="margin: 20px 0;">Email: info@fotoart.ru</p>
+            <p>© 2025 FotoArt</p>
+        </div>
+    </footer>
+</body>
+</html>

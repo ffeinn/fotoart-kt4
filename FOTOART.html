@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOART - Фотостудия</title>
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #d0cef8;
+            color: #ddd;
+            line-height: 1.6;
+        }
+        
+        /* Фиксированное меню (position: fixed) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #181281;
+            color: white;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #908bee;
+        }
+        
+        /* Липкий заголовок (position: sticky) */
+        .page-header {
+            position: sticky;
+            top: 60px; /* Учитываем высоту фиксированного меню */
+            background-color: #908bee;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 100;
+        }
+        
+        /* Основное содержимое */
+        .main-content {
+            padding: 100px 0 50px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Блок с относительным и абсолютным позиционированием */
+        .hero {
+            position: relative;
+            height: 400px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            background-image: url('https://i.pinimg.com/originals/d9/db/7d/d9db7d113b0c94bb6ec75419bcee42f6.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 80%;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .art{
+            text-decoration: none;
+            color: white;
+        }
+        
+        
+        /* Подвал */
+         footer {
+            background-color: #181281;
+            color: white;
+            width: 100% 0;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Фиксированное меню -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo"><a href="FOTOART.html" class="art">FotoArt</a></div>
+            <ul class="nav-links">
+                <li><a href="portfolio.html" target="_blank">Портфолио</a></li>
+                <li><a href="price.html">Цены</a></li>
+                <li><a href="register.html">Запись</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Липкий заголовок -->
+    <header class="page-header" id="home">
+        <h1>Профессиональная фотостудия</h1>
+    </header>
+    
+    <div class="main-content">
+        <!-- Блок с относительным и абсолютным позиционированием -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Добро пожаловать в FotoArt!</h1>
+                <p>Создаём яркие воспоминания и уникальные образы в нашей профессиональной фотостудии. Погрузитесь в атмосферу творчества и стиля вместе с нами!</p>
+            </div>
+        </section>
+        
+       
+    
+    <!-- Подвал -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Контакты</h3>
+            <p style="margin: 20px 0;">г. Владивосток, ул. Фотографичная, 15</p>
+            <p>Телефон: +7 (800) 555-35-35</p>
+            <p style="margin: 20px 0;">Email: info@fotoart.ru</p>
+            <p>© 2025 FotoArt</p>
+        </div>
+    </footer>
+</body>
+</html>
